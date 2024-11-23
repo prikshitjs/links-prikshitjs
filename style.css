@@ -1,0 +1,61 @@
+:root
+{
+    --poppins: 'poppins', sans-serif;
+    --cursive: "Mystery Quest", system-ui;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: var(--poppins);
+}
+body
+{
+    background: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+a
+{
+    text-decoration: none;
+}
+.link-boxes
+{
+    display: flex;
+    flex-direction: column;
+}
+.linkbox
+{
+    background: #ffffff36;
+    margin: 50px 0;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ffffff6b;
+    color: #fff;
+    transform: scale(1);
+    transition: 0.4s;
+    backdrop-filter: blur(10px);
+}
+.linkbox:hover
+{
+    transform: scale(1.07);
+    background: #ffffff65;
+}
+.linkbox h2
+{
+    margin-bottom: 15px;
+}
+.linkbox span:nth-child(1)
+{
+    margin-bottom: 10px;
+}
+.linkbox span
+{
+    font-size: 13px;
+    display: block;
+}
